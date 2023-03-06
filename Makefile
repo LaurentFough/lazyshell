@@ -9,6 +9,7 @@ ZSH?=zsh # zsh binary to run tests with
 
 install:
 	$(INSTALL) -d $(SHARE_DIR)
+	$(INSTALL) -d $(DOC_DIR)
 	cp .version lazyshell.zsh $(SHARE_DIR)
 	cp README.md $(DOC_DIR)
 	sed -e '1s/ .*//' -e '/^\[build-status-[a-z]*\]: /d' < README.md > $(DOC_DIR)/README.md
