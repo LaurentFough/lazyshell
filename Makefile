@@ -7,7 +7,7 @@ DOC_DIR?=$(DESTDIR)$(PREFIX)/share/doc/$(NAME)
 ZSH?=zsh # zsh binary to run tests with
 
 
-install: all
+install:
 	$(INSTALL) -d $(SHARE_DIR)
 	#cp .version zsh-syntax-highlighting.zsh $(SHARE_DIR)
 	cp README.md $(DOC_DIR)
